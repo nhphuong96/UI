@@ -1,0 +1,345 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6CCA4C74-0D5F-4406-A1B9-9D88772261A8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HH</RootNamespace>
+    <AssemblyName>HH</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsNV.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmCaiDat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmCaiDat.Designer.cs">
+      <DependentUpon>frmCaiDat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmDangNhap.Designer.cs">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmDanhMucThuoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmDanhMucThuoc.Designer.cs">
+      <DependentUpon>frmDanhMucThuoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmKeDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmKeDon.Designer.cs">
+      <DependentUpon>frmKeDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmQLBN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmQLBN.Designer.cs">
+      <DependentUpon>frmQLBN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmQLBS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmQLBS.Designer.cs">
+      <DependentUpon>frmQLBS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmQLP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmQLP.Designer.cs">
+      <DependentUpon>frmQLP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmThongTinNhaPhatTrien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmThongTinNhaPhatTrien.Designer.cs">
+      <DependentUpon>frmThongTinNhaPhatTrien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmThongTinPhanMem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmThongTinPhanMem.Designer.cs">
+      <DependentUpon>frmThongTinPhanMem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChild\frmThongTinUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChild\frmThongTinUser.Designer.cs">
+      <DependentUpon>frmThongTinUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmCaiDat.resx">
+      <DependentUpon>frmCaiDat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmDangNhap.resx">
+      <DependentUpon>frmDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmDanhMucThuoc.resx">
+      <DependentUpon>frmDanhMucThuoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmKeDon.resx">
+      <DependentUpon>frmKeDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmQLBN.resx">
+      <DependentUpon>frmQLBN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmQLBS.resx">
+      <DependentUpon>frmQLBS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmQLP.resx">
+      <DependentUpon>frmQLP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmThongTinNhaPhatTrien.resx">
+      <DependentUpon>frmThongTinNhaPhatTrien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmThongTinPhanMem.resx">
+      <DependentUpon>frmThongTinPhanMem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChild\frmThongTinUser.resx">
+      <DependentUpon>frmThongTinUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-413882_640.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Close.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\huong-dan-thiet-ke-form-login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-413882_6401.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\paper-413882_640 %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mouse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-Close-Program-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Windows-Close-Program-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_70405005_HSPK56xgomY3aYoetQArMuA1CdqoWXie - Copy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_70405005_HSPK56xgomY3aYoetQArMuA1CdqoWXie.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_70405005_HSPK56xgomY3aYoetQArMuA1CdqoWXie1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\500_F_70405005_HSPK56xgomY3aYoetQArMuA1CdqoWXie - Copy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plus1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\disc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\warning.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balls.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chromosome.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe61.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ambulance9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\balls1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bandaid.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chromosome1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\drops1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\facebook29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\male1001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical141.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine13.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine15.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine17.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pin56.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\syringe62.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thermometer23.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\three115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\users6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicine143.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medical142.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avatar1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
